@@ -27,6 +27,7 @@ import { MemberEditResolver } from './_resolvers/member-edit.resolver';
 import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes.guard';
 import { PhotoEditorComponent } from './members/photo-editor/photo-editor.component';
 import { FileUploadModule } from 'ng2-file-upload';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 
 export function tokenGetter(){
    return localStorage.getItem('token');
@@ -48,7 +49,7 @@ export class CustomHammerConfig extends HammerGestureConfig  {
       RegisterComponent,
       MemberListComponent,
       ListsComponent,
-      MessagesComponent,
+   MessagesComponent,
       MemberCardComponent,
       MemberDetailComponent,
       MemberEditComponent,
@@ -63,6 +64,7 @@ export class CustomHammerConfig extends HammerGestureConfig  {
       FileUploadModule,
       ReactiveFormsModule,
       BsDropdownModule.forRoot(),
+      BsDatepickerModule.forRoot(),
       TabsModule.forRoot(),
       RouterModule.forRoot(appRoutes),
       JwtModule.forRoot({
