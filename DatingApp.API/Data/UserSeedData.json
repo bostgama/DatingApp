@@ -119,7 +119,7 @@
         "Country": "Belize",
         "Photos": [
           {
-            "url": "https://randomuser.me/api/portraits/female/89.jpg",
+            "url": "https://randomuser.me/api/portraits/women/89.jpg",
             "isMain": true,
             "description": "Consectetur dolore tempor duis labore sunt anim."
           }
@@ -140,7 +140,7 @@
         "Country": "Brazil",
         "Photos": [
           {
-            "url": "https://randomuser.me/api/portraits/female/32.jpg",
+            "url": "https://randomuser.me/api/portraits/women/32.jpg",
             "isMain": true,
             "description": "Nisi laboris ea commodo ad Lorem sint proident aute magna id."
           }
@@ -161,7 +161,7 @@
         "Country": "Senegal",
         "Photos": [
           {
-            "url": "https://randomuser.me/api/portraits/female/8.jpg",
+            "url": "https://randomuser.me/api/portraits/women/8.jpg",
             "isMain": true,
             "description": "Et minim Lorem tempor amet."
           }
@@ -182,7 +182,7 @@
         "Country": "Turkmenistan",
         "Photos": [
           {
-            "url": "https://randomuser.me/api/portraits/female/87.jpg",
+            "url": "https://randomuser.me/api/portraits/women/87.jpg",
             "isMain": true,
             "description": "Consectetur aliquip non enim adipisicing exercitation exercitation cillum."
           }
@@ -203,7 +203,7 @@
         "Country": "Cambodia",
         "Photos": [
           {
-            "url": "https://randomuser.me/api/portraits/female/17.jpg",
+            "url": "https://randomuser.me/api/portraits/women/17.jpg",
             "isMain": true,
             "description": "Reprehenderit sint enim duis deserunt amet exercitation."
           }

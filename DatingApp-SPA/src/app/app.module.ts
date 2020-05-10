@@ -34,6 +34,13 @@ import { ButtonsModule } from 'ngx-bootstrap/buttons';
 import { ListResolver } from './_resolvers/lists.resolver';
 import { MessagestResolver } from './_resolvers/messages.resolver';
 import { MemberMessagesComponent } from './members/member-messages/member-messages.component';
+import { AdminPanelComponent } from './admin/admin-panel/admin-panel.component';
+import { HasRoleDirective } from './_directives/hasRole.directive';
+import { PhotoManagementComponent } from './admin/photo-management/photo-management.component';
+import { UserManagementComponent } from './admin/user-management/user-management.component';
+import { AdminService } from './_service/admin.service';
+import { RolesModalComponent } from './admin/roles-modal/roles-modal.component';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 export function tokenGetter(){
    return localStorage.getItem('token');
@@ -55,13 +62,18 @@ export class CustomHammerConfig extends HammerGestureConfig  {
       RegisterComponent,
       MemberListComponent,
       ListsComponent,
-   MessagesComponent,
+      MessagesComponent,
       MemberCardComponent,
       MemberDetailComponent,
       MemberEditComponent,
       PhotoEditorComponent,
       TimeAgoPipe,
-      MemberMessagesComponent
+      MemberMessagesComponent,
+      AdminPanelComponent,
+      HasRoleDirective,
+      PhotoManagementComponent,
+      UserManagementComponent,
+      RolesModalComponent
    ],
    imports: [
       BrowserModule,
@@ -77,6 +89,7 @@ export class CustomHammerConfig extends HammerGestureConfig  {
       ButtonsModule.forRoot(),
       PaginationModule.forRoot(),
       RouterModule.forRoot(appRoutes),
+      ModalModule.forRoot(),
       JwtModule.forRoot({
          config: {
             tokenGetter: tokenGetter,
@@ -94,7 +107,11 @@ export class CustomHammerConfig extends HammerGestureConfig  {
       {provide: HAMMER_GESTURE_CONFIG, useClass: CustomHammerConfig },
       MemberEditResolver,
       PreventUnsavedChanges,
-      MessagestResolver
+      MessagestResolver,
+      AdminService
+   ],
+   entryComponents: [
+      RolesModalComponent
    ],
    bootstrap: [
       AppComponent

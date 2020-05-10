@@ -46,6 +46,7 @@ export class PhotoEditorComponent implements OnInit {
       maxFileSize: 10 * 1024 * 1024
     });
 
+
     this.hasBaseDropZoneOver = false;
     this.response = '';
 
